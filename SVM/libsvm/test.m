@@ -1,4 +1,5 @@
 %% This script is used to test whether the tool LibSVM works correctly or not.
+
 fprintf('       Part I : Load the data and build the SVM model\n')
 [heart_scale_lable, heart_scale_inst] = libsvmread('heart_scale');
 model = svmtrain(heart_scale_lable, heart_scale_inst, '-g 0.1');
